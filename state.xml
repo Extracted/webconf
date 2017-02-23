@@ -1,0 +1,373 @@
+
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <arp xmlns="http://netconfcentral.org/ns/yuma-arp">
+        <dynamic-arps>
+            <dynamic-arp>
+                <ip-address>192.168.0.100</ip-address>
+                <mac-address>f4:6d:04:96:ad:ba</mac-address>
+            </dynamic-arp>
+            <dynamic-arp>
+                <ip-address>192.168.0.1</ip-address>
+                <mac-address>cc:b2:55:f4:25:04</mac-address>
+            </dynamic-arp>
+        </dynamic-arps>
+    </arp>
+    <nacm xmlns="urn:ietf:params:xml:ns:yang:ietf-netconf-acm">
+        <enable-nacm>true</enable-nacm>
+        <read-default>permit</read-default>
+        <write-default>deny</write-default>
+        <exec-default>permit</exec-default>
+        <enable-external-groups>true</enable-external-groups>
+        <denied-operations>0</denied-operations>
+        <denied-data-writes>0</denied-data-writes>
+    </nacm>
+    <netconf xmlns="urn:ietf:params:xml:ns:netmod:notification">
+        <streams>
+            <stream>
+                <name>NETCONF</name>
+                <description>default NETCONF event stream</description>
+                <replaySupport>true</replaySupport>
+                <replayLogCreationTime>2017-02-20T16:12:48Z</replayLogCreationTime>
+            </stream>
+        </streams>
+    </netconf>
+    <netconf-state xmlns="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">
+        <capabilities>
+            <capability>urn:ietf:params:netconf:base:1.0</capability>
+            <capability>urn:ietf:params:netconf:base:1.1</capability>
+            <capability>urn:ietf:params:netconf:capability:candidate:1.0</capability>
+            <capability>urn:ietf:params:netconf:capability:confirmed-commit:1.0</capability>
+            <capability>urn:ietf:params:netconf:capability:confirmed-commit:1.1</capability>
+            <capability>urn:ietf:params:netconf:capability:rollback-on-error:1.0</capability>
+            <capability>urn:ietf:params:netconf:capability:validate:1.0</capability>
+            <capability>urn:ietf:params:netconf:capability:validate:1.1</capability>
+            <capability>urn:ietf:params:netconf:capability:url:1.0?scheme=file</capability>
+            <capability>urn:ietf:params:netconf:capability:xpath:1.0</capability>
+            <capability>urn:ietf:params:netconf:capability:notification:1.0</capability>
+            <capability>urn:ietf:params:netconf:capability:interleave:1.0</capability>
+            <capability>urn:ietf:params:netconf:capability:partial-lock:1.0</capability>
+            <capability>urn:ietf:params:netconf:capability:with-defaults:1.0?basic-mode=explicit&amp;also-supported=trim,report-all,report-all-tagged</capability>
+            <capability>urn:ietf:params:xml:ns:yang:iana-crypt-hash?module=iana-crypt-hash&amp;revision=2014-04-04&amp;features=crypt-hash-md5,crypt-hash-sha-256,crypt-hash-sha-512</capability>
+            <capability>urn:ietf:params:xml:ns:yang:ietf-inet-types?module=ietf-inet-types&amp;revision=2013-07-15</capability>
+            <capability>urn:ietf:params:xml:ns:yang:ietf-netconf-acm?module=ietf-netconf-acm&amp;revision=2012-02-22</capability>
+            <capability>urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring?module=ietf-netconf-monitoring&amp;revision=2010-10-04</capability>
+            <capability>urn:ietf:params:xml:ns:netconf:partial-lock:1.0?module=ietf-netconf-partial-lock&amp;revision=2009-10-19</capability>
+            <capability>urn:ietf:params:xml:ns:yang:ietf-netconf-with-defaults?module=ietf-netconf-with-defaults&amp;revision=2011-06-01</capability>
+            <capability>urn:ietf:params:xml:ns:yang:ietf-system?module=ietf-system&amp;revision=2014-08-06&amp;features=radius,authentication,local-users,radius-authentication,ntp,ntp-udp-port,timezone-name,dns-udp-tcp-port</capability>
+            <capability>urn:ietf:params:xml:ns:yang:ietf-yang-types?module=ietf-yang-types&amp;revision=2013-07-15</capability>
+            <capability>urn:ietf:params:xml:ns:netmod:notification?module=nc-notifications&amp;revision=2008-07-14</capability>
+            <capability>http://yuma123.org/ns/netconfd-ex?module=netconfd-ex&amp;revision=2016-08-08</capability>
+            <capability>urn:ietf:params:xml:ns:netconf:notification:1.0?module=notifications&amp;revision=2008-07-14</capability>
+            <capability>http://netconfcentral.org/ns/yuma-app-common?module=yuma-app-common&amp;revision=2012-08-16</capability>
+            <capability>http://netconfcentral.org/ns/yuma-arp?module=yuma-arp&amp;revision=2012-01-13</capability>
+            <capability>http://netconfcentral.org/ns/yuma-mysession?module=yuma-mysession&amp;revision=2010-05-10</capability>
+            <capability>http://netconfcentral.org/ns/yuma-ncx?module=yuma-ncx&amp;revision=2012-01-13</capability>
+            <capability>http://netconfcentral.org/ns/yuma-proc?module=yuma-proc&amp;revision=2012-10-10</capability>
+            <capability>http://netconfcentral.org/ns/yuma-system?module=yuma-system&amp;revision=2014-11-27</capability>
+            <capability>http://netconfcentral.org/ns/yuma-time-filter?module=yuma-time-filter&amp;revision=2011-08-13</capability>
+            <capability>http://netconfcentral.org/ns/yuma-types?module=yuma-types&amp;revision=2012-06-01</capability>
+        </capabilities>
+        <datastores>
+            <datastore>
+                <name>candidate</name>
+                <last-modified xmlns="http://netconfcentral.org/ns/yuma-time-filter">2017-02-20T16:12:48Z</last-modified>
+            </datastore>
+            <datastore>
+                <name>running</name>
+                <last-modified xmlns="http://netconfcentral.org/ns/yuma-time-filter">2017-02-20T16:12:48Z</last-modified>
+            </datastore>
+        </datastores>
+        <schemas>
+            <schema>
+                <identifier>iana-crypt-hash</identifier>
+                <version>2014-04-04</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>urn:ietf:params:xml:ns:yang:iana-crypt-hash</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>ietf-inet-types</identifier>
+                <version>2013-07-15</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>urn:ietf:params:xml:ns:yang:ietf-inet-types</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>ietf-netconf-acm</identifier>
+                <version>2012-02-22</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>urn:ietf:params:xml:ns:yang:ietf-netconf-acm</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>ietf-netconf-monitoring</identifier>
+                <version>2010-10-04</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>ietf-netconf-partial-lock</identifier>
+                <version>2009-10-19</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>urn:ietf:params:xml:ns:netconf:partial-lock:1.0</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>ietf-netconf-with-defaults</identifier>
+                <version>2011-06-01</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>urn:ietf:params:xml:ns:yang:ietf-netconf-with-defaults</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>ietf-system</identifier>
+                <version>2014-08-06</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>urn:ietf:params:xml:ns:yang:ietf-system</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>ietf-yang-types</identifier>
+                <version>2013-07-15</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>urn:ietf:params:xml:ns:yang:ietf-yang-types</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>nc-notifications</identifier>
+                <version>2008-07-14</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>urn:ietf:params:xml:ns:netmod:notification</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>netconfd-ex</identifier>
+                <version>2016-08-08</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>http://yuma123.org/ns/netconfd-ex</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>notifications</identifier>
+                <version>2008-07-14</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>urn:ietf:params:xml:ns:netconf:notification:1.0</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>yuma-app-common</identifier>
+                <version>2012-08-16</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>http://netconfcentral.org/ns/yuma-app-common</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>yuma-arp</identifier>
+                <version>2012-01-13</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>http://netconfcentral.org/ns/yuma-arp</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>yuma-mysession</identifier>
+                <version>2010-05-10</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>http://netconfcentral.org/ns/yuma-mysession</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>yuma-ncx</identifier>
+                <version>2012-01-13</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>http://netconfcentral.org/ns/yuma-ncx</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>yuma-proc</identifier>
+                <version>2012-10-10</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>http://netconfcentral.org/ns/yuma-proc</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>yuma-system</identifier>
+                <version>2014-11-27</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>http://netconfcentral.org/ns/yuma-system</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>yuma-time-filter</identifier>
+                <version>2011-08-13</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>http://netconfcentral.org/ns/yuma-time-filter</namespace>
+                <location>NETCONF</location>
+            </schema>
+            <schema>
+                <identifier>yuma-types</identifier>
+                <version>2012-06-01</version>
+                <format
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:yang</format>
+                <namespace>http://netconfcentral.org/ns/yuma-types</namespace>
+                <location>NETCONF</location>
+            </schema>
+        </schemas>
+        <sessions>
+            <session>
+                <session-id>1</session-id>
+                <transport
+                    xmlns:ncm="urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring">ncm:netconf-ssh</transport>
+                <username>root</username>
+                <source-host>127.0.0.1</source-host>
+                <login-time>2017-02-20T16:13:00Z</login-time>
+                <in-rpcs>0</in-rpcs>
+                <in-bad-rpcs>0</in-bad-rpcs>
+                <out-rpc-errors>0</out-rpc-errors>
+                <out-notifications>0</out-notifications>
+            </session>
+        </sessions>
+        <statistics>
+            <netconf-start-time>2017-02-20T16:12:48Z</netconf-start-time>
+            <in-bad-hellos>0</in-bad-hellos>
+            <in-sessions>1</in-sessions>
+            <dropped-sessions>0</dropped-sessions>
+            <in-rpcs>0</in-rpcs>
+            <in-bad-rpcs>0</in-bad-rpcs>
+            <out-rpc-errors>0</out-rpc-errors>
+            <out-notifications>0</out-notifications>
+        </statistics>
+    </netconf-state>
+    <proc xmlns="http://netconfcentral.org/ns/yuma-proc">
+        <cpuinfo>
+            <cpu>
+                <processor>0</processor>
+                <vendor_id>GenuineIntel</vendor_id>
+                <cpu_family>6</cpu_family>
+                <model>42</model>
+                <model_name>Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz</model_name>
+                <stepping>7</stepping>
+                <cpu_MHz>3310.796</cpu_MHz>
+                <cache_size>6144 KB</cache_size>
+                <physical_id>0</physical_id>
+                <siblings>1</siblings>
+                <core_id>0</core_id>
+                <cpu_cores>1</cpu_cores>
+                <apicid>0</apicid>
+                <initial_apicid>0</initial_apicid>
+                <fpu>yes</fpu>
+                <fpu_exception>yes</fpu_exception>
+                <cpuid_level>13</cpuid_level>
+                <wp>yes</wp>
+                <flags>fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc pni pclmulqdq monitor ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes xsave avx hypervisor lahf_lm</flags>
+                <bogomips>6621.59</bogomips>
+                <clflush_size>64</clflush_size>
+                <cache_alignment>64</cache_alignment>
+                <address_sizes>36 bits physical, 48 bits virtual</address_sizes>
+                <power_management/>
+            </cpu>
+        </cpuinfo>
+        <meminfo>
+            <MemTotal>2048464 kB</MemTotal>
+            <MemFree>237080 kB</MemFree>
+            <Buffers>61664 kB</Buffers>
+            <Cached>1072444 kB</Cached>
+            <SwapCached>0 kB</SwapCached>
+            <Active>1225064 kB</Active>
+            <Inactive>413556 kB</Inactive>
+            <Active_anon_>505512 kB</Active_anon_>
+            <Inactive_anon_>9124 kB</Inactive_anon_>
+            <Active_file_>719552 kB</Active_file_>
+            <Inactive_file_>404432 kB</Inactive_file_>
+            <Unevictable>0 kB</Unevictable>
+            <Mlocked>0 kB</Mlocked>
+            <SwapTotal>2095100 kB</SwapTotal>
+            <SwapFree>2095100 kB</SwapFree>
+            <Dirty>92 kB</Dirty>
+            <Writeback>0 kB</Writeback>
+            <AnonPages>504464 kB</AnonPages>
+            <Mapped>173580 kB</Mapped>
+            <Shmem>10172 kB</Shmem>
+            <Slab>102760 kB</Slab>
+            <SReclaimable>80264 kB</SReclaimable>
+            <SUnreclaim>22496 kB</SUnreclaim>
+            <KernelStack>6880 kB</KernelStack>
+            <PageTables>29788 kB</PageTables>
+            <NFS_Unstable>0 kB</NFS_Unstable>
+            <Bounce>0 kB</Bounce>
+            <WritebackTmp>0 kB</WritebackTmp>
+            <CommitLimit>3119332 kB</CommitLimit>
+            <Committed_AS>3243900 kB</Committed_AS>
+            <VmallocTotal>34359738367 kB</VmallocTotal>
+            <VmallocUsed>0 kB</VmallocUsed>
+            <VmallocChunk>0 kB</VmallocChunk>
+            <HardwareCorrupted>0 kB</HardwareCorrupted>
+            <HugePages_Total>0</HugePages_Total>
+            <HugePages_Free>0</HugePages_Free>
+            <HugePages_Rsvd>0</HugePages_Rsvd>
+            <HugePages_Surp>0</HugePages_Surp>
+            <Hugepagesize>2048 kB</Hugepagesize>
+            <DirectMap4k>98240 kB</DirectMap4k>
+            <DirectMap2M>1998848 kB</DirectMap2M>
+        </meminfo>
+    </proc>
+    <system-state xmlns="urn:ietf:params:xml:ns:yang:ietf-system">
+        <yuma xmlns="http://netconfcentral.org/ns/yuma-system">
+            <sysName>localhost</sysName>
+            <sysCurrentDateTime>2017-02-20T16:13:00Z</sysCurrentDateTime>
+            <sysBootDateTime>2017-02-20T16:12:48Z</sysBootDateTime>
+            <sysLogLevel>info</sysLogLevel>
+            <sysNetconfServerId>netconfd 2.9-0</sysNetconfServerId>
+            <sysNetconfServerCLI>
+                <access-control>enforcing</access-control>
+                <default-style>explicit</default-style>
+                <delete-empty-npcontainers>false</delete-empty-npcontainers>
+                <eventlog-size>1000</eventlog-size>
+                <feature-enable-default>true</feature-enable-default>
+                <hello-timeout>600</hello-timeout>
+                <idle-timeout>3600</idle-timeout>
+                <indent>2</indent>
+                <log-level>info</log-level>
+                <max-burst>10</max-burst>
+                <running-error>stop</running-error>
+                <no-startup/>
+                <startup-error>continue</startup-error>
+                <subdirs>true</subdirs>
+                <superuser>root</superuser>
+                <system-sorted>true</system-sorted>
+                <target>candidate</target>
+                <warn-idlen>64</warn-idlen>
+                <warn-linelen>0</warn-linelen>
+                <with-startup>false</with-startup>
+                <with-url>true</with-url>
+                <with-validate>true</with-validate>
+                <max-sessions>1024</max-sessions>
+            </sysNetconfServerCLI>
+            <uname>
+                <sysname>Linux</sysname>
+                <release>4.4.0-31-generic</release>
+                <version>#50-Ubuntu SMP Wed Jul 13 00:07:12 UTC 2016</version>
+                <machine>x86_64</machine>
+                <nodename>jani-VirtualBox</nodename>
+            </uname>
+        </yuma>
+    </system-state>
+</config>
