@@ -158,8 +158,8 @@ static int pre_config(apr_pool_t *pconf, apr_pool_t *plog, apr_pool_t *ptemp)
     username = "root";
     password = "hadm1_123";
 
-    private_key_path = strdup("/var/www/.ssh/id_rsa");
-    public_key_path = strdup("/var/www/.ssh/id_rsa.pub");
+    private_key_path = "/var/www/.ssh/id_rsa";
+    public_key_path = "/var/www/.ssh/id_rsa.pub";
 
     return OK;
 }
@@ -530,35 +530,57 @@ static int load_configuration(request_rec *r){
 }
 
 /*
+ * Handles setup requests
+ */
+static int handleSetup(request_rec *r){
+    printf("Configure request received with args: %s\n", r->args);
+    char* pch, val;
+    for(pch = strtok(r->args, "=&"); pch != NULL; pch = strtok(NULL, "=&")){
+        char* val = strtok(NULL, "=&");
+        printf("pch: %s, val: %s\n", pch, val);
+        if(strcmp(pch, "server") == 0){
+            server_address = strdup(val);
+        }if(strcmp(pch, "username") == 0){
+            username = strdup(val);
+        }if(strcmp(pch, "password") == 0){
+            password = strdup(val);
+        }
+    }
+    printf("Server ip set to %s\n", server_address);
+    printf("Server username set to %s\n", username);
+    printf("Server password set to %s\n", password);
+    return 0;
+}
+
+/*
 * The handler function for our module.
 */
 static int handler(request_rec *r) {
-  if(!r->uri){
-      return DECLINED;
-  }
+    if(!r->uri){
+        return DECLINED;
+    }
 
-  /* GET request to change netconf server ip, ip is passed as uri parameter */
-  if( startsWith(r->uri, "/setserver") ){
-      server_address = r->args + 3; //r->args == "ip=xx.xx.xx.xx" so we add 3 to get only ip address"
-      printf("Server ip set to %s\n", server_address);
-      return OK;
-  }
+    /* GET request to change server values */
+    if( startsWith(r->uri, "/setup") ){
+        handleSetup(r);
+        return OK;
+    }
 
-  /* Configuration request */
-  if( startsWith(r->uri, "/getconfiguration") ){
-      printf("Config request received\n");
-      load_configuration(r);
-      return OK;
-  }
+    /* Configuration request */
+    if( startsWith(r->uri, "/getconfiguration") ){
+        printf("Config request received\n");
+        load_configuration(r);
+        return OK;
+    }
 
-  /* POST request with new configuration data */
-  if( startsWith(r->uri, "/editconfig") ){
-      printf("Edit request received\n");
-      edit_config(r);
-      return OK;
-  }
+    /* POST request with new configuration data */
+    if( startsWith(r->uri, "/editconfig") ){
+        printf("Edit request received\n");
+        edit_config(r);
+        return OK;
+    }
 
-  /* Default to file request */
-  printf("Serving \"%s\"... ", r->uri +1); // +1 to remove "/" from the beginning
-  return write_file(r, r->uri +1);
+    /* Default to file request */
+    printf("Serving \"%s\"... ", r->uri +1); // +1 to remove "/" from the beginning
+    return write_file(r, r->uri +1);
 }
