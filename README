@@ -1,3 +1,6 @@
+
+!! OUTDATED !!
+
 =Description=
 Example module for Apache using the Yuma API to execute RPCs over netconf
 
@@ -31,3 +34,6 @@ Start apache:
 
 Load the web link:
  wget http://localhost/state.xml
+
+
+!! OUTDATED !!
