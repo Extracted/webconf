@@ -8,7 +8,7 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/time.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h /usr/include/endian.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
@@ -28,7 +28,7 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
  /usr/include/asm-generic/socket.h \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum.h \
@@ -40,8 +40,8 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
@@ -58,7 +58,7 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
  /usr/include/string.h /usr/include/xlocale.h \
  /usr/include/apr-1.0/apr_allocator.h \
  /usr/include/apr-1.0/apr_thread_mutex.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
  /usr/include/apr-1.0/apr_optional_hooks.h /usr/include/apache2/os.h \
  /usr/include/apache2/ap_config_auto.h \
  /usr/include/apache2/ap_config_layout.h \
@@ -109,7 +109,7 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
  /usr/include/libxml2/libxml/xmlversion.h \
  /usr/include/libxml2/libxml/xmlexports.h /usr/include/yuma/ncx/dlq.h \
  /usr/include/yuma/platform/procdefs.h /usr/include/inttypes.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdbool.h \
  /usr/include/yuma/ncx/grp.h /usr/include/libxml2/libxml/xmlregexp.h \
  /usr/include/libxml2/libxml/tree.h \
  /usr/include/libxml2/libxml/xmlstring.h \
@@ -124,28 +124,9 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
  /usr/include/libxml2/libxml/xmlautomata.h \
  /usr/include/libxml2/libxml/entities.h \
  /usr/include/libxml2/libxml/encoding.h /usr/include/iconv.h \
- /usr/include/x86_64-linux-gnu/unicode/ucnv.h \
- /usr/include/x86_64-linux-gnu/unicode/ucnv_err.h \
- /usr/include/x86_64-linux-gnu/unicode/utypes.h \
- /usr/include/x86_64-linux-gnu/unicode/umachine.h \
- /usr/include/x86_64-linux-gnu/unicode/ptypes.h \
- /usr/include/x86_64-linux-gnu/unicode/platform.h \
- /usr/include/x86_64-linux-gnu/unicode/uconfig.h \
- /usr/include/x86_64-linux-gnu/unicode/uvernum.h \
- /usr/include/x86_64-linux-gnu/unicode/urename.h \
- /usr/include/x86_64-linux-gnu/unicode/uversion.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/float.h \
- /usr/include/x86_64-linux-gnu/unicode/utf.h \
- /usr/include/x86_64-linux-gnu/unicode/utf8.h \
- /usr/include/x86_64-linux-gnu/unicode/utf16.h \
- /usr/include/x86_64-linux-gnu/unicode/utf_old.h \
- /usr/include/x86_64-linux-gnu/unicode/uenum.h \
- /usr/include/x86_64-linux-gnu/unicode/localpointer.h \
  /usr/include/libxml2/libxml/xmlIO.h /usr/include/libxml2/libxml/SAX.h \
  /usr/include/libxml2/libxml/xlink.h /usr/include/libxml2/libxml/SAX2.h \
  /usr/include/yuma/ncx/ncxconst.h /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/huge_val.h \
  /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
  /usr/include/x86_64-linux-gnu/bits/huge_vall.h \
@@ -196,7 +177,7 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
 
 /usr/include/time.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h:
 
 /usr/include/endian.h:
 
@@ -238,7 +219,7 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
 
 /usr/include/asm-generic/sockios.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -266,9 +247,9 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h:
 
 /usr/include/limits.h:
 
@@ -320,7 +301,7 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
 
 /usr/include/apr-1.0/apr_thread_mutex.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h:
 
 /usr/include/apr-1.0/apr_optional_hooks.h:
 
@@ -492,7 +473,7 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
 
 /usr/include/inttypes.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdbool.h:
 
 /usr/include/yuma/ncx/grp.h:
 
@@ -530,40 +511,6 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
 
 /usr/include/iconv.h:
 
-/usr/include/x86_64-linux-gnu/unicode/ucnv.h:
-
-/usr/include/x86_64-linux-gnu/unicode/ucnv_err.h:
-
-/usr/include/x86_64-linux-gnu/unicode/utypes.h:
-
-/usr/include/x86_64-linux-gnu/unicode/umachine.h:
-
-/usr/include/x86_64-linux-gnu/unicode/ptypes.h:
-
-/usr/include/x86_64-linux-gnu/unicode/platform.h:
-
-/usr/include/x86_64-linux-gnu/unicode/uconfig.h:
-
-/usr/include/x86_64-linux-gnu/unicode/uvernum.h:
-
-/usr/include/x86_64-linux-gnu/unicode/urename.h:
-
-/usr/include/x86_64-linux-gnu/unicode/uversion.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/5/include/float.h:
-
-/usr/include/x86_64-linux-gnu/unicode/utf.h:
-
-/usr/include/x86_64-linux-gnu/unicode/utf8.h:
-
-/usr/include/x86_64-linux-gnu/unicode/utf16.h:
-
-/usr/include/x86_64-linux-gnu/unicode/utf_old.h:
-
-/usr/include/x86_64-linux-gnu/unicode/uenum.h:
-
-/usr/include/x86_64-linux-gnu/unicode/localpointer.h:
-
 /usr/include/libxml2/libxml/xmlIO.h:
 
 /usr/include/libxml2/libxml/SAX.h:
@@ -575,10 +522,6 @@ mod_yangrpc_example_la-mod_yangrpc_example.lo: mod_yangrpc_example.c \
 /usr/include/yuma/ncx/ncxconst.h:
 
 /usr/include/math.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/huge_val.h:
 

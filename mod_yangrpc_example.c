@@ -532,12 +532,10 @@ static int load_configuration(request_rec *r){
 /*
  * Handles setup requests
  */
-static int handleSetup(request_rec *r){
-    printf("Configure request received with args: %s\n", r->args);
+static int handleSetup(char* args){
     char* pch, val;
-    for(pch = strtok(r->args, "=&"); pch != NULL; pch = strtok(NULL, "=&")){
+    for(pch = strtok(args, "=&"); pch != NULL; pch = strtok(NULL, "=&")){
         char* val = strtok(NULL, "=&");
-        printf("pch: %s, val: %s\n", pch, val);
         if(strcmp(pch, "server") == 0){
             server_address = strdup(val);
         }if(strcmp(pch, "username") == 0){
@@ -562,7 +560,8 @@ static int handler(request_rec *r) {
 
     /* GET request to change server values */
     if( startsWith(r->uri, "/setup") ){
-        handleSetup(r);
+    	printf("Setup request received\n");
+        handleSetup(r->args);
         return OK;
     }
 

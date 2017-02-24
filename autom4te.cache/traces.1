@@ -63,9 +63,6 @@ m4trace:configure.ac:1: -1- m4_pattern_allow([^sharedstatedir$])
 m4trace:configure.ac:1: -1- AC_SUBST([localstatedir], ['${prefix}/var'])
 m4trace:configure.ac:1: -1- AC_SUBST_TRACE([localstatedir])
 m4trace:configure.ac:1: -1- m4_pattern_allow([^localstatedir$])
-m4trace:configure.ac:1: -1- AC_SUBST([runstatedir], ['${localstatedir}/run'])
-m4trace:configure.ac:1: -1- AC_SUBST_TRACE([runstatedir])
-m4trace:configure.ac:1: -1- m4_pattern_allow([^runstatedir$])
 m4trace:configure.ac:1: -1- AC_SUBST([includedir], ['${prefix}/include'])
 m4trace:configure.ac:1: -1- AC_SUBST_TRACE([includedir])
 m4trace:configure.ac:1: -1- m4_pattern_allow([^includedir$])
@@ -151,7 +148,7 @@ m4trace:configure.ac:1: -1- AC_SUBST_TRACE([target_alias])
 m4trace:configure.ac:1: -1- m4_pattern_allow([^target_alias$])
 m4trace:configure.ac:3: -1- AC_CANONICAL_SYSTEM
 m4trace:configure.ac:3: -1- _m4_warn([obsolete], [The macro `AC_CANONICAL_SYSTEM' is obsolete.
-You should run autoupdate.], [../../lib/autoconf/general.m4:1868: AC_CANONICAL_SYSTEM is expanded from...
+You should run autoupdate.], [../../lib/autoconf/general.m4:1857: AC_CANONICAL_SYSTEM is expanded from...
 configure.ac:3: the top level])
 m4trace:configure.ac:3: -1- AC_CANONICAL_TARGET
 m4trace:configure.ac:3: -1- AC_CANONICAL_HOST
@@ -196,7 +193,7 @@ m4trace:configure.ac:3: -1- AC_SUBST_TRACE([target_os])
 m4trace:configure.ac:3: -1- m4_pattern_allow([^target_os$])
 m4trace:configure.ac:5: -1- AM_INIT_AUTOMAKE([foreign])
 m4trace:configure.ac:5: -1- m4_pattern_allow([^AM_[A-Z]+FLAGS$])
-m4trace:configure.ac:5: -1- AM_AUTOMAKE_VERSION([1.15])
+m4trace:configure.ac:5: -1- AM_AUTOMAKE_VERSION([1.14.1])
 m4trace:configure.ac:5: -1- AC_REQUIRE_AUX_FILE([install-sh])
 m4trace:configure.ac:5: -1- AC_SUBST([INSTALL_PROGRAM])
 m4trace:configure.ac:5: -1- AC_SUBST_TRACE([INSTALL_PROGRAM])
@@ -438,7 +435,8 @@ m4trace:configure.ac:6: -1- m4_pattern_allow([^RANLIB$])
 m4trace:configure.ac:6: -1- m4_pattern_allow([LT_OBJDIR])
 m4trace:configure.ac:6: -1- AC_DEFINE_TRACE_LITERAL([LT_OBJDIR])
 m4trace:configure.ac:6: -1- m4_pattern_allow([^LT_OBJDIR$])
-m4trace:configure.ac:6: -1- AH_OUTPUT([LT_OBJDIR], [/* Define to the sub-directory where libtool stores uninstalled libraries. */
+m4trace:configure.ac:6: -1- AH_OUTPUT([LT_OBJDIR], [/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
 @%:@undef LT_OBJDIR])
 m4trace:configure.ac:6: -1- LT_SUPPORTED_TAG([CC])
 m4trace:configure.ac:6: -1- AC_SUBST([MANIFEST_TOOL])
@@ -459,9 +457,6 @@ m4trace:configure.ac:6: -1- m4_pattern_allow([^OTOOL$])
 m4trace:configure.ac:6: -1- AC_SUBST([OTOOL64])
 m4trace:configure.ac:6: -1- AC_SUBST_TRACE([OTOOL64])
 m4trace:configure.ac:6: -1- m4_pattern_allow([^OTOOL64$])
-m4trace:configure.ac:6: -1- AC_SUBST([LT_SYS_LIBRARY_PATH])
-m4trace:configure.ac:6: -1- AC_SUBST_TRACE([LT_SYS_LIBRARY_PATH])
-m4trace:configure.ac:6: -1- m4_pattern_allow([^LT_SYS_LIBRARY_PATH$])
 m4trace:configure.ac:6: -1- AH_OUTPUT([HAVE_DLFCN_H], [/* Define to 1 if you have the <dlfcn.h> header file. */
 @%:@undef HAVE_DLFCN_H])
 m4trace:configure.ac:6: -1- AC_SUBST([CPP])
@@ -590,9 +585,6 @@ m4trace:configure.ac:9: -1- m4_pattern_allow([^CXXCPP$])
 m4trace:configure.ac:9: -1- AC_SUBST([LD])
 m4trace:configure.ac:9: -1- AC_SUBST_TRACE([LD])
 m4trace:configure.ac:9: -1- m4_pattern_allow([^LD$])
-m4trace:configure.ac:9: -1- AC_SUBST([LT_SYS_LIBRARY_PATH])
-m4trace:configure.ac:9: -1- AC_SUBST_TRACE([LT_SYS_LIBRARY_PATH])
-m4trace:configure.ac:9: -1- m4_pattern_allow([^LT_SYS_LIBRARY_PATH$])
 m4trace:configure.ac:10: -1- AC_SUBST([CCAS])
 m4trace:configure.ac:10: -1- AC_SUBST_TRACE([CCAS])
 m4trace:configure.ac:10: -1- m4_pattern_allow([^CCAS$])
@@ -615,7 +607,7 @@ m4trace:configure.ac:10: -1- _AM_SUBST_NOTMAKE([am__fastdepCCAS_TRUE])
 m4trace:configure.ac:10: -1- _AM_SUBST_NOTMAKE([am__fastdepCCAS_FALSE])
 m4trace:configure.ac:11: -1- AC_PROG_LIBTOOL
 m4trace:configure.ac:11: -1- _m4_warn([obsolete], [The macro `AC_PROG_LIBTOOL' is obsolete.
-You should run autoupdate.], [aclocal.m4:121: AC_PROG_LIBTOOL is expanded from...
+You should run autoupdate.], [aclocal.m4:129: AC_PROG_LIBTOOL is expanded from...
 configure.ac:11: the top level])
 m4trace:configure.ac:11: -1- LT_INIT
 m4trace:configure.ac:15: -1- AC_SUBST([apachemodulelibdir])
